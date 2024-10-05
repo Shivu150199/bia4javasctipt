@@ -115,3 +115,114 @@
 //     obj3[i] = obj1[i];
 // }
 // console.log(obj3 == obj1);
+
+// let obj1 = {
+//     name: "asus",
+//     processor: "i7",
+//     details: { certification: "evo", price: "78000", generation: 12 },
+// };
+// console.log(JSON.stringify(obj1));
+// let obj2 = JSON.parse(JSON.stringify(obj1));
+// obj1.details.price = "70000";
+// console.log(obj1);
+// console.log(obj2);
+
+// let obj2 = {};
+// // obj2.name = "lenovo";
+
+// // obj1.name = "shivam";
+// // obj1.details.certification = "military grade";
+// // console.log(obj1);
+// // console.log(obj2);
+
+// for (let i in obj1) {
+//     obj2[i] = obj1[i];
+// }
+
+// // loop
+// obj1.name = "lenov0";
+// obj1.details.price = "75000";
+// console.log(obj1);
+// console.log(obj2);
+
+// JSON =
+
+// JSON.stringyfy()
+// JSON.parse()
+
+// let array=[1,2,3,4,6]
+// let array2=[34,34,2,6,75,3]
+
+// let newArray=[...array,...array2]
+// let a;
+// let obj1 = {
+//     name: "asus",
+//     processor: "i7",
+//     details: { certification: "evo", price: "78000", generation: 12 },
+//     sayHello: function () {
+//         console.log(this.name + this.processor);
+//     },
+// };
+// console.log(obj1.sayHello());
+// let obj2 = {
+//     owner: "shubham",
+// };
+// // let obj2 = { ...obj1,...obj1.details};
+// let obj3 = { ...obj1, ...obj2 };
+// console.log(obj3);
+
+// let result = Object.assign(obj1, obj2);
+// console.log(result);
+
+// constructor function
+
+// let car = {
+//     name: "carname",
+//     engine: "enginename",
+//     color: "colorname",
+// };
+
+// let creta = {
+//     name: "creta",
+//     engine: "BS6",
+//     color: "blue",
+// };
+
+// console.log(this.navigator.geolocation());
+// console.log(this);
+
+function car(name, engine, color) {
+    let obj = {
+        name: name,
+        engine: engine,
+        color: color,
+    };
+    return obj;
+}
+console.log(car("thar", "BS6", "Black"));
+console.log(car("ENOVA", "BS5", "Green"));
+
+function Car(name, engine, color) {
+    this.name = name;
+    this.engine = engine;
+    this.color = color;
+}
+
+function getHumanStage(h, w, i) {
+    return {
+        height: h,
+        weight: w,
+        intelligence: i,
+    };
+}
+
+function GetHumanStage(h, w, i) {
+    this.height = h;
+    this.weight = w;
+    this.intelligence = i;
+}
+
+let child = new GetHumanStage("1 foot", "5kg", 2);
+console.log(child);
+let adult = new GetHumanStage("5 feet", "60 kg", "6");
+console.log(adult);

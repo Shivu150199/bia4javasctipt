@@ -470,7 +470,7 @@
 // } else {
 //     console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}!`);
 // }
-// 
+//
 // let mark = prompt("student marks");
 
 // if (mark >= 60 && mark <= 100) {
@@ -514,32 +514,25 @@
 //     ? console.log("not fine")
 //     : console.log("equal");
 
+// nullish coaellicing operator//
 
-    // nullish coaellicing operator//
+// || operator
 
+// 4>5||5>3
 
-    // || operator
+// null??'shivam'
 
-    // 4>5||5>3
+// let name;
+// console.log(''??name??false??'bhagwan')
 
-    // null??'shivam'
-
-    // let name;
-    // console.log(''??name??false??'bhagwan')
-
-
-    // switch case
-
-
+// switch case
 
 //     switch(expression){
 // case name:
 
-
 //     }
 
 // let age =12
-
 
 // switch(age>18){
 
@@ -549,9 +542,7 @@
 
 // }
 
-
 // let mark=65
-
 
 // switch(true){
 // case mark>=60&&mark<=100:console.log('first')
@@ -564,9 +555,7 @@
 //     default:console.log('not a valid marks')
 // }
 
-
 // let buyingCost=1200
-
 
 // switch(true){
 
@@ -576,9 +565,7 @@
 
 // }
 
-
 // loop
-
 
 // loop
 // for loop
@@ -586,7 +573,6 @@
 // for(initialization,condition,updation){
 //     block of code
 // }
-
 
 // for(let i=1;i<=10;i++){
 //     alert(`hello javascript ${i}`)
@@ -609,8 +595,6 @@
 // }
 // while()
 
-
-
 // let i=1
 // do{
 //     console.log('hello javascrip'+i)
@@ -618,12 +602,10 @@
 // }
 // while(i<=0)
 
-
 // while(i<=0){
 //     console.log('hello javascrip'+i)
 //     i++
 // }
-
 
 // let array=[1,2,3,4,5,6,7,8,9]//9
 // console.log(array[0])
@@ -642,26 +624,3 @@
 //  i++
 // }
 // while(i<array.length)
-
-
-
-
-
-
-
-
-
-
-
-
-// loop
-
-
-
-
-
-
-
-
-
-
