@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div style="display: flex;align-items: center; gap: 2rem;">
+<input type="password" placeholder="password" id="pass" class="pass">
+<button onclick="togglePassword()" class="btn" id="btn">show password</button>
+
+</div>
+
+<script>
+    
+    
+    function togglePassword(){
+      
+        const input=document.getElementById("pass");
+        const btn=document.querySelector('#btn')
+
+if(input.type=='password'){
+    input.type='text'
+    btn.innerText='hide password'
+}else{
+    input.type='password'
+    btn.innerText='show password'
+}
+
+
+}
+
+
+</script>
+
+</body>
+</html>
