@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-.container{
-    width: 100vw;
-    height: 100vh;
-    background: cornsilk;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.title{
-    font-size: 2rem;
-    font-weight: 900;
-
-}
-
-    </style>
-</head>
-<body>
-
-<!-- <form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                width: 100vw;
+                height: 100vh;
+                background: cornsilk;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .title {
+                font-size: 2rem;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <form>
  <input type="text" class="input">
  <input type="number" class="input">
  <input type="email" class="input">
@@ -34,13 +31,13 @@
 </form>
 
 <button onclick="changeType()" >change type</button> -->
-<!-- <div class="container">
+        <!-- <div class="container">
 
     <h1 class="title">
         hello shubham
     </h1>
 </div> -->
-
+        <!-- 
 <input type="text" placeholder="write your first name" id="fname">
 
 <input type="text" placeholder="write your last name" id="lname">
@@ -51,93 +48,96 @@
 <div class="nameContainer">
 
 
-</div>
+</div> -->
 
+        <!-- <button onclick="addMore()">add more</button> -->
 
-<button onclick="addMore()">add more</button>
+        <div class="main">
+            <button onclick="generateCard()" class="btn">generate Card</button>
+            <div class="card_container">
+                <div class="card">
+                    <h2>name :shivam</h2>
+                    <p>age: 25</p>
+                    <p>profession :'Developer'</p>
+                </div>
+            </div>
+        </div>
 
+        <script>
+            // function changeType(){
+            //     const input=document.querySelectorAll('.input')
+            // console.log(input)
 
-<script>
+            // input.forEach((item,index)=>{
 
-// function changeType(){
-//     const input=document.querySelectorAll('.input')
-// console.log(input)
+            // item.type=='text'?item.type='email':item
 
-// input.forEach((item,index)=>{
+            // })
+            // console.log(input)
+            // }
 
-// item.type=='text'?item.type='email':item
-
-
-// })
-// console.log(input)
-// }
-
-
-/*
+            /*
 create HTML element using javascript
 */
-// createElement()
+            // createElement()
 
-// let obj={
+            // let obj={
 
-// }
-// obj.newValue='sdkljfskdj'
+            // }
+            // obj.newValue='sdkljfskdj'
 
+            // let div=document.createElement('div')
+            // div.className='container'
+            // let h1=document.createElement('h1')
+            // h1.className='title'
+            // h1.innerText='Hello shubham'
 
-// let div=document.createElement('div')
-// div.className='container'
-// let h1=document.createElement('h1')
-// h1.className='title'
-// h1.innerText='Hello shubham'
+            // //append
+            // div.append(h1)
 
-// //append
-// div.append(h1)
+            // // console.log(h1)
 
-// // console.log(h1)
+            // document.body.append(div)
+            // console.log(div)
 
-// document.body.append(div)
-// console.log(div)
+            // let nameContainer=document.querySelector('.nameContainer')
+            // function addName(){
+            // let fname=document.getElementById('fname')
+            // let lname=document.getElementById('lname')
 
+            // console.log(fname.value)
+            // console.log(lname.value)
+            // const h1Element=document.createElement('h1')
+            // // <h1 class='title'>
 
-let nameContainer=document.querySelector('.nameContainer')
-function addName(){
-let fname=document.getElementById('fname')
-let lname=document.getElementById('lname')
+            // //     </h1>
+            // h1Element.className='title'
+            // // h1Element.innerText=`${fname.value} ${lname.value}`
+            // h1Element.innerText=fname.value + " " + lname.value
+            // nameContainer.append(h1Element)
+            // console.log(h1Element)
+            // }
 
-console.log(fname.value)
-console.log(lname.value)    
-const h1Element=document.createElement('h1')
-// <h1 class='title'>  
-    
-    
-//     </h1>
-h1Element.className='title'
-// h1Element.innerText=`${fname.value} ${lname.value}`
-h1Element.innerText=fname.value + " " + lname.value
-nameContainer.append(h1Element)
-console.log(h1Element)
-}
+            // input{
+            //     type:'askjdf',
+            //     id:'alskdjf',
+            //     placeholder:'al;skdjflas'
+            //     value:''
+            // }
 
-// input{
-//     type:'askjdf',
-//     id:'alskdjf',
-//     placeholder:'al;skdjflas'
-//     value:''
-// }
+            // function addMore(){
+            // let bold=document.createElement('b')
+            // bold.innerText='hello i am bold'
+            // // document.body.append(bold)
+            // // nameContainer.append(bold)
+            // document.body.insertBefore(bold,nameContainer)
 
-function addMore(){
-let bold=document.createElement('b')
-bold.innerText='hello i am bold'
-// document.body.append(bold)
-// nameContainer.append(bold)
-document.body.insertBefore(bold,nameContainer)
+            // }
 
-}
-
-
-</script>
-
-
-    
-</body>
+            // let heading = document.querySelector("h2");
+            // console.log(heading.previousElementSibling);
+            // let card = document.querySelector(".card");
+            // console.log(card);
+        </script>
+    </body>
 </html>
