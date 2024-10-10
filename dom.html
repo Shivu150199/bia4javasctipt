@@ -51,7 +51,7 @@
 </div> -->
 
         <!-- <button onclick="addMore()">add more</button> -->
-
+        <!-- 
         <div class="main">
             <button onclick="generateCard()" class="btn">generate Card</button>
             <div class="card_container">
@@ -61,8 +61,16 @@
                     <p>profession :'Developer'</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
+        <div class="container">
+            <h2>hello</h2>
+            <h2>hello1</h2>
+            <h2>hello2</h2>
+            <h2>hello3</h2>
+            <h2>hello</h2>
+        </div>
+        <button onclick="changeContent()">change</button>
         <script>
             // function changeType(){
             //     const input=document.querySelectorAll('.input')
@@ -138,6 +146,17 @@ create HTML element using javascript
             // console.log(heading.previousElementSibling);
             // let card = document.querySelector(".card");
             // console.log(card);
+
+            function changeContent() {
+                const container = document.querySelector(".container");
+                // console.log(container.children);
+                const children = container.children;
+                console.log(children);
+                for (let i = 0; i < children.length; i++) {
+                    let heading = children[i];
+                    heading.innerText = "hello everyone";
+                }
+            }
         </script>
     </body>
 </html>

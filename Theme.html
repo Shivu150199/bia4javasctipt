@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .nav {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.2rem 1rem;
+                position: sticky;
+                top: 0;
+                background-color: antiquewhite;
+            }
+
+            .navbar {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                font-size: 1rem;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            }
+            .profile {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a.dark {
+                color: white;
+            }
+            .btn {
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="navbar">
+                <h2 class="logo">
+                    <span style="color: bisque"> TATA </span
+                    ><span style="color: blue">Consultancy services</span>
+                </h2>
+                <ul>
+                    <!-- <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Sevices</a>
+                    </li>
+                    <li>
+                        <a href="">Carrer</a>
+                    </li> -->
+                </ul>
+                <button onclick="toggleTheme()" class="btn">theme</button>
+
+                <img
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                    alt="profilew"
+                    class="profile"
+                />
+            </div>
+        </nav>
+
+        <section>
+            <h2>welcome in my website</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                deserunt expedita cupiditate omnis officia quod eligendi
+                sapiente odio distinctio veniam? Officia ex incidunt harum
+                numquam laudantium veniam accusamus, id molestiae!
+            </p>
+        </section>
+
+        <script>
+            let menu = [
+                { id: "1", title: "About us", url: "about.html" },
+                { id: "2", title: "contact us", url: "about.html" },
+                { id: "3", title: "Career ", url: "about.html" },
+            ];
+
+            menu.map((item) => {
+                return ` <li>
+                        <a href="">Carrer</a>
+                    </li>`;
+            });
+        </script>
+    </body>
+</html>
